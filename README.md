@@ -4,6 +4,8 @@ A self-contained HTML presentation editor. **One file. No build. No server.** Op
 
 ![Editor in light theme](screenshots/hero-light.png)
 
+**[Try it live →](https://itchernetski.github.io/html-presentation-editor/editor.html)** · **[Download v1.0.0](https://github.com/itchernetski/html-presentation-editor/releases/latest/download/editor.html)**
+
 Inspired by [Gleb Kudryavtsev's "Тильда на минималках" post](https://t.me/gleb_pro_ai/558).
 
 ## Why
@@ -25,7 +27,7 @@ This is a single HTML file that edits itself. The whole product is the file. The
 
 ## Quick start
 
-1. Download [`editor.html`](editor.html).
+1. [Download `editor.html`](https://github.com/itchernetski/html-presentation-editor/releases/latest/download/editor.html) (or [grab the source](editor.html), or [try it live](https://itchernetski.github.io/html-presentation-editor/editor.html) without downloading).
 2. Open it in your browser.
 3. Click any text and type. `Cmd+S` to save.
 
