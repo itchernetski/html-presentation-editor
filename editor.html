@@ -536,12 +536,14 @@
 
     /* === PRINT === */
     @media print {
+      /* Zero page margin removes the browser's auto header/footer (date, URL, page #) */
+      @page { margin: 0; }
       [data-editor-ui], #editor-toolbar, #slide-indicator, #slide-nav, .insert-button, .block-controls, .modal-backdrop, #restore-banner {
         display: none !important;
       }
       body { background: #fff; color: #000; height: auto; overflow: visible; }
       body.mode-slides #content { height: auto; overflow: visible; }
-      #content { max-width: 100%; padding: 0; }
+      #content { max-width: 100%; padding: 24px 32px; }
       .block {
         page-break-inside: avoid;
         break-inside: avoid;
