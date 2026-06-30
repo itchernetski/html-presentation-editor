@@ -269,6 +269,39 @@
     .tb-status.is-dirty { color: var(--accent); }
     .tb-status.is-saved { color: var(--fg-muted); }
 
+    /* === PREVIEW: collapse toolbar into a corner bubble === */
+    body:not(.is-editing) #editor-toolbar {
+      left: auto;
+      right: 16px;
+      transform: none;
+      width: 44px;
+      height: 44px;
+      padding: 0;
+      gap: 0;
+      justify-content: center;
+      overflow: hidden;
+      cursor: pointer;
+      transition: width var(--transition), height var(--transition), padding var(--transition), background var(--transition);
+    }
+    body:not(.is-editing) #editor-toolbar > * { display: none; }
+    body:not(.is-editing) #editor-toolbar::before {
+      content: "✎";
+      font-size: 18px;
+      line-height: 1;
+      color: var(--fg-muted);
+    }
+    body:not(.is-editing) #editor-toolbar:hover {
+      width: auto;
+      height: auto;
+      padding: 6px;
+      gap: 4px;
+      cursor: default;
+    }
+    body:not(.is-editing) #editor-toolbar:hover::before { display: none; }
+    body:not(.is-editing) #editor-toolbar:hover > .tb-btn { display: inline-flex; }
+    body:not(.is-editing) #editor-toolbar:hover > .tb-sep { display: block; }
+    body:not(.is-editing) #editor-toolbar:hover > .tb-status { display: inline-block; }
+
     .insert-button {
       position: relative;
       height: 36px;
